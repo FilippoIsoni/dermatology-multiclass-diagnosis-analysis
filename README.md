@@ -33,8 +33,9 @@ Note: classes are imbalanced (from ~111 cases for class 1 down to ~20 for class 
 
 ```
 ├── script.R          # full analysis: data split, kNN, tree, Naive Bayes, LDA, plots
-├── report.docx        # written report with commentary and figures
-└── dermatology.dat     # dataset (UCI)
+├── report.pdf        # written report with commentary and figures
+├── tree.png          # plot of the splits made by the decision tree
+└── dermatology.dat   # dataset (UCI)
 ```
 
 ## Requirements
