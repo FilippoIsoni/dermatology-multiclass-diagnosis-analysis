@@ -20,8 +20,8 @@ Note: classes are imbalanced (from ~111 cases for class 1 down to ~20 for class 
 | Majority classifier (baseline) | 31% | – | Always predicts class 1 |
 | k-NN (k=20) | 88% | 0.84 | Low sensitivity for classes 4, 6 |
 | Decision tree (cp=0.015, 5 splits) | 89% | 0.86 | Best overall; splits on `clubbing_rete_ridges`, `vacuolisation_damage_basal_layer`, `fibrosis_papillary_dermis` |
-| Naive Bayes (kernel density) | 86% | 0.83 | Best CV performance, but worst on test — struggles with class 4 |
-| LDA | 86% | 0.82 | First 3 discriminant directions explain ~91% of between-class variance |
+| Naive Bayes (kernel density) | 86% | 0.83 | worst on test — struggles with class 4 |
+| LDA | 86% | 0.82 | First 3 discriminant directions explain ~91% of between-class variance | plot of the test set observations on the discriminant directions explains the difficulty in the classification of some class on the tst set
 
 ## Key findings
 
@@ -34,7 +34,6 @@ Note: classes are imbalanced (from ~111 cases for class 1 down to ~20 for class 
 ```
 ├── script.R          # full analysis: data split, kNN, tree, Naive Bayes, LDA, plots
 ├── report.docx        # written report with commentary and figures
-├── figures/            # confusion matrices, tree plot, density plots, LDA score plots
 └── dermatology.dat     # dataset (UCI)
 ```
 
