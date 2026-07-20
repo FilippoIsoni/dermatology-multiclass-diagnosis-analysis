@@ -19,9 +19,9 @@ Note: classes are imbalanced (from ~111 cases for class 1 down to ~20 for class 
 |---|---|---|---|
 | Majority classifier (baseline) | 31% | – | Always predicts class 1 |
 | k-NN (k=20) | 88% | 0.84 | Low sensitivity for classes 4, 6 |
-| Decision tree (cp=0.015, 5 splits) | 89% | 0.86 | Best overall; splits on `clubbing_rete_ridges`, `vacuolisation_damage_basal_layer`, `fibrosis_papillary_dermis` |
+| Decision tree (cp=0.015, 5 splits) | 89% | 0.86 | Best overall; splits on `clubbing_rete_ridges`, `vacuolisation_damage_basal_layer`, `fibrosis_papillary_dermis` perfectly capture classes 1,3,5 |
 | Naive Bayes (kernel density) | 86% | 0.83 | worst on test — struggles with class 4 |
-| LDA | 86% | 0.82 | First 3 discriminant directions explain ~91% of between-class variance | plot of the test set observations on the discriminant directions explains the difficulty in the classification of some class on the tst set
+| LDA | 86% | 0.82 | First 3 discriminant directions explain ~91% of between-class variance | plot of the test set observations on the discriminant directions explains the difficulty in the classification of some class on the tst set |
 
 ## Key findings
 
